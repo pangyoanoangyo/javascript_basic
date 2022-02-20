@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body>
+    <script>
+
+    let tv = new Object();
+    tv.color = 'white';
+    tv.price = 1250000;
+    tv.info = function(){
+        document.write("TV는"+this.color+"입니다<br>");
+        document.write("TV는"+this.price+"입니다<br>");
+    }
+
+    let car = {
+        color : 'black',
+        price : 17000000,
+        info : function(){
+            document.write("자동차는"+this.color+"입니다<br>");
+            document.write("자동차는"+this.price+"입니다<br>");}
+        };
+        
+        document.write("<h1 class='red'>TV 소개</h1><br>");
+        tv.info();
+        document.write("<h1>자동차 소개</h1><br>");
+        car.info();
+
+    </script>
+
+
+</body>
+</html>
