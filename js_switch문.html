@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>switch문</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <script>
+        let potal=prompt("먹고싶은건?한식?중식?양식?","");
+        let url;
+        switch(potal){
+            case "한식" : url = "search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%95%9C%EC%8B%9D&oquery=%ED%95%9C%EC%8B%9D&tqi=hm4eLdprvxssskVRdUossssstyd-441031";
+            break;
+            case "중식" : url = "search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%A4%91%EC%8B%9D&oquery=%ED%95%9C%EC%8B%9D&tqi=hm4nllprvhGssUQeZwossssssM8-227165";
+            break;
+            case "양식" : url = "search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%96%91%EC%8B%9D&oquery=%EC%96%91%E3%85%85%EA%B8%B0&tqi=hm4egsprvN8ssLhXnNGssssstDN-445722";
+            break;
+            default:alert("그건 안돼 이눔아!!");
+        }
+        if(url) location.href="https://"+url;
+
+    </script>
+
+
+
+</body>
+</html>
